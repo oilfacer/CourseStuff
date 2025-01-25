@@ -1,0 +1,2 @@
+deep1m.tar, https://box.xmu.edu.cn/share/cc2ced0c893b1dc380ed761df2, passwd: mir2201
+sift1m.tar, https://box.xmu.edu.cn/share/9598bfe2cecd4396e7441f9252, passwd: mir2201
