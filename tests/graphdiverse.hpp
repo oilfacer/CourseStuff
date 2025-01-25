@@ -141,6 +141,17 @@ public:
                 /**
                 filling your code here
                 **/
+               unsigned y = host2nbs[j].idx; // 获取当前邻居节点的索引
+                for (unsigned k = 0; k < divNb.size(); k++)
+                {
+                    unsigned x = divNb[k];
+                    float distxy = Metrics::l2dst(rawDat + x * nDim, rawDat + y * nDim, nDim);
+                    if (distxy < host2nbs[j].dst)
+                    {
+                        __occlude__ = true;
+                        break;
+                    }
+                }
                 if (__occlude__ == false)
                 {
                     divNb.emplace_back(y);
